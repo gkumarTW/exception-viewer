@@ -9,9 +9,12 @@ export default function ExceptionModal({ message, logs, onClose }) {
 
         {/* Header */}
         <div className="flex justify-end items-start mb- border-">
-          {/* <h3 className="text-xl font-semibold text-gray-900 w-[80%] h-40 overflow-auto wrap-break-word border-">
-            {message}
-          </h3> */}
+          
+            <h3 className="text-xl font-semibold text-gray-90 whitespace-nowrap overflow-hidden text-ellipsis mt-4 ml-4">
+              {message}
+            </h3>
+
+
 
           <button
             onClick={onClose}
